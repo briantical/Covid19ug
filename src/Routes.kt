@@ -1,21 +1,22 @@
 package com.briantical
 
+import com.briantical.Routes.*
 import io.ktor.application.call
 import io.ktor.http.HttpStatusCode
 import io.ktor.response.respond
-import io.ktor.routing.Route
-import io.ktor.routing.get
-import io.ktor.routing.post
-import io.ktor.routing.route
+import io.ktor.routing.*
 
 fun Route.apiroutes(){
     route("/api/v1"){
         get("/"){
             call.respond(HttpStatusCode.OK, "Fetched")
         }
-
-        post("/"){
-            call.respond(HttpStatusCode.Created)
-        }
+        testroutes()
+        casesroutes()
+        reportsroutes()
+        summaryroutes()
+        confirmedroutes()
+        locationsroutes()
+        statisticsroutes()
     }
 }

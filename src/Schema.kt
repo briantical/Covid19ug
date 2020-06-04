@@ -6,7 +6,8 @@ data class Summary(
     val active: Int=0,
     val deaths : Int =0,
     val confirmed: Int =0,
-    val recovered: Int =0
+    val recovered: Int =0,
+    val tests: Int = 0
 )
 
 data class Tests(
