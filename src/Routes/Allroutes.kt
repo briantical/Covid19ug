@@ -1,4 +1,5 @@
-package com.briantical
+package com.briantical.Routes
+
 
 import com.briantical.Routes.*
 import io.ktor.application.call

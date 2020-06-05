@@ -11,6 +11,10 @@ fun Route.reportsroutes(){
             call.respond(HttpStatusCode.OK, "summary")
         }
 
+        get("/{date}"){
+            call.respond(HttpStatusCode.OK, "Got certain dates report")
+        }
+
         post("/"){
             call.respond(HttpStatusCode.Created, "created summary")
         }
