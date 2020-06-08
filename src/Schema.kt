@@ -1,5 +1,6 @@
 package com.briantical
 
+import org.bson.types.ObjectId
 import java.time.LocalDateTime
 
 data class Summary(
@@ -11,6 +12,7 @@ data class Summary(
 )
 
 data class Tests(
+    val _id : String =  ObjectId().toString(),
     val total : Int = 0,
     val contacts: Int = 0,
     val pointsofentry: Int = 0

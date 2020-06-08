@@ -5,6 +5,7 @@ val ktor_version: String by project
 val kotlin_version: String by project
 val logback_version: String by project
 val kmongo_version: String by project
+val gson_version: String by project
 
 val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions.jvmTarget = JavaVersion.VERSION_1_8.toString()
@@ -36,6 +37,7 @@ dependencies {
     implementation("io.ktor:ktor-auth:$ktor_version")
     implementation("io.ktor:ktor-gson:$ktor_version")
     implementation("org.litote.kmongo:kmongo:$kmongo_version")
+//    implementation( "com.google.code.gson:gson:$gson_version")
     testImplementation("io.ktor:ktor-server-tests:$ktor_version")
 }
 
